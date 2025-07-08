@@ -40,13 +40,6 @@ The project follows a clean architecture with proper separation of concerns and 
 6. **Testing**:
    - **QuantumBookstoreFullTest**: Comprehensive test class for testing all functionality
 
-### Design Patterns Used
-
-1. **Template Method Pattern**: The abstract `Book` class defines the template for book operations, while concrete implementations provide specific behaviors.
-2. **Strategy Pattern**: Different book types implement different purchase strategies.
-3. **Repository Pattern**: The `BookInventory` class acts as a repository for book storage and retrieval.
-4. **Factory Method Pattern**: Static factory methods in the `BookStoreException` class create specific exception instances.
-
 
 ## Installation Instructions
 
@@ -186,43 +179,3 @@ try {
 List<Book> outdatedBooks = inventory.removeOutdatedBooks(5);
 ```
 
-## Design Decisions
-
-### Modular Structure
-
-The project is organized into a modular structure with clear separation of concerns:
-- **Model**: Contains the book classes that represent the domain entities
-- **Repository**: Contains the inventory management logic
-- **Service**: Contains the service interfaces for external interactions
-- **Exception**: Contains custom exceptions for error handling
-
-This structure makes the codebase more maintainable, testable, and extensible.
-
-### Extensibility
-
-The system is designed to be easily extensible, allowing new types of products to be added without modifying existing code:
-- The abstract `Book` class provides a common interface for all book types
-- New book types can be added by extending the `Book` class and implementing the required methods
-- The `BookInventory` class works with the `Book` abstraction, not concrete implementations
-
-### Error Handling
-
-The system includes robust error handling:
-- Custom exceptions with descriptive messages
-- Proper validation of inputs (ISBN, quantity, email, etc.)
-- Graceful handling of error cases (insufficient stock, non-existent books, etc.)
-
-### Resource Management
-
-The system efficiently manages resources:
-- Paper books track stock quantities to prevent overselling
-- E-books are always available but require valid email addresses for delivery
-- Showcase books are properly marked as not for sale
-
-### Prefixing Print Statements
-
-As per the requirements, all print statements are prefixed with "Quantum book store" to clearly identify system messages.
-
-### Testing
-
-The system includes a comprehensive test class that demonstrates all functionality and tests various edge cases to ensure robustness.
