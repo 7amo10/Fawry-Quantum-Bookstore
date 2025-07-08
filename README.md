@@ -118,9 +118,10 @@ This will:
 - Demonstrate attempting to buy a showcase book (which will fail)
 
 Screen:
-![First-Time](~/Desktop/Fawry-Internship-Challenge-p2/imgs/first-time-1.png)
 
-![First-Time](~/Desktop/Fawry-Internship-Challenge-p2/imgs/first-time-2.png)
+![First-Time](https://github.com/7amo10/Fawry-Quantum-Bookstore/blob/main/imgs/first-time-1.png)
+
+![First-Time](https://github.com/7amo10/Fawry-Quantum-Bookstore/blob/main/imgs/first-time-2.png)
 
 #### 3. Running the Full Test Suite
 
@@ -138,10 +139,14 @@ This will run a series of tests that demonstrate:
 - Handling error cases (insufficient stock, non-existent books, etc.)
 
 Screen:
-![First-Time](~/Desktop/Fawry-Internship-Challenge-p2/imgs/Full-test-1.png)
-![First-Time](~/Desktop/Fawry-Internship-Challenge-p2/imgs/Full-test-2.png)
-![First-Time](~/Desktop/Fawry-Internship-Challenge-p2/imgs/Full-test-3.png)
-![First-Time](~/Desktop/Fawry-Internship-Challenge-p2/imgs/Full-test-4.png)
+
+![First-Time](https://github.com/7amo10/Fawry-Quantum-Bookstore/blob/main/imgs/Full-test-1.png)
+
+![First-Time](https://github.com/7amo10/Fawry-Quantum-Bookstore/blob/main/imgs/Full-test-2.png)
+
+![First-Time](https://github.com/7amo10/Fawry-Quantum-Bookstore/blob/main/imgs/Full-test-3.png)
+
+![First-Time](https://github.com/7amo10/Fawry-Quantum-Bookstore/blob/main/imgs/Full-test-4.png)
 
 ## Project Management
 
