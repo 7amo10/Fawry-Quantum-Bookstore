@@ -5,12 +5,12 @@ A Java implementation of an online bookstore system that demonstrates advanced o
 ## Project Overview
 
 Quantum Bookstore is a comprehensive book inventory management system that allows for the management of different types of books:
+
 - **Paper Books**: Physical books with stock quantities that can be shipped to customers
 - **E-Books**: Digital books with specific file types that can be sent via email
 - **Showcase/Demo Books**: Books that are not for sale but are used for display or demonstration purposes
 
 The system provides functionality for adding books to inventory, removing outdated books, and purchasing books with appropriate delivery methods based on the book type.
-
 
 ## Architecture
 
@@ -40,14 +40,15 @@ The project follows a clean architecture with proper separation of concerns and 
 6. **Testing**:
    - **QuantumBookstoreFullTest**: Comprehensive test class for testing all functionality
 
-
 ## Installation Instructions
 
 ### Prerequisites
+
 - Java Development Kit (JDK) 8 or higher
 - Any Java IDE (Eclipse, IntelliJ IDEA, etc.) or command-line tools
 
 ### Setup
+
 1. Clone the repository or download the source code
 2. Import the project into your IDE as a Java project
 3. Ensure the source folders are properly configured:
@@ -71,6 +72,7 @@ chmod +x run.sh
 ```
 
 The script will:
+
 1. Create the necessary output directories
 2. Compile all the Java files
 3. Present a menu to choose between:
@@ -108,11 +110,17 @@ java -cp out/main com.quantum.bookstore.QuantumBookstoreDemo
 ```
 
 This will:
+
 - Create a book inventory
 - Add sample books (paper book, ebook, showcase book)
 - Demonstrate buying a paper book
 - Demonstrate buying an ebook
 - Demonstrate attempting to buy a showcase book (which will fail)
+
+Screen:
+![First-Time](~/Desktop/Fawry-Internship-Challenge-p2/imgs/first-time-1.png)
+
+![First-Time](~/Desktop/Fawry-Internship-Challenge-p2/imgs/first-time-2.png)
 
 #### 3. Running the Full Test Suite
 
@@ -123,10 +131,17 @@ java -cp out/main:out/test com.quantum.bookstore.QuantumBookstoreFullTest
 ```
 
 This will run a series of tests that demonstrate:
+
 - Adding different types of books to the inventory
 - Removing outdated books
 - Buying books (paper books and ebooks)
 - Handling error cases (insufficient stock, non-existent books, etc.)
+
+Screen:
+![First-Time](~/Desktop/Fawry-Internship-Challenge-p2/imgs/Full-test-1.png)
+![First-Time](~/Desktop/Fawry-Internship-Challenge-p2/imgs/Full-test-2.png)
+![First-Time](~/Desktop/Fawry-Internship-Challenge-p2/imgs/Full-test-3.png)
+![First-Time](~/Desktop/Fawry-Internship-Challenge-p2/imgs/Full-test-4.png)
 
 ## Project Management
 
@@ -178,4 +193,3 @@ try {
 // Remove outdated books
 List<Book> outdatedBooks = inventory.removeOutdatedBooks(5);
 ```
-
